@@ -29,12 +29,12 @@ void loop()
     digitalWrite(GREEN_LED, HIGH);
     digitalWrite(BLUE_LED, LOW);
   }
-  if (sensorValue > THRESHOLD1 && sensorValue < THRESHOLD2) {
+  if (sensorValue >= THRESHOLD1 && sensorValue < THRESHOLD2) {
     digitalWrite(RED_LED, HIGH);
     digitalWrite(GREEN_LED, HIGH);
     digitalWrite(BLUE_LED, LOW);
   }
-  if (sensorValue > THRESHOLD2) {
+  if (sensorValue >= THRESHOLD2) {
     digitalWrite(RED_LED, HIGH);
     digitalWrite(GREEN_LED, LOW);
     digitalWrite(BLUE_LED, LOW);
